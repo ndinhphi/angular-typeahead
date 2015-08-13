@@ -498,7 +498,7 @@
   }
 
   function mwTypeaheadElemLink(elem, $scope, $parent, activeClass) {
-    elem.on("mousedown touchstart", function() {
+    elem.on("click", function() {
       $scope.$apply(function() {
         $scope.select($scope.item);
       });
